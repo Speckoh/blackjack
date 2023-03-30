@@ -36,19 +36,20 @@ class Card {
         this.facedown = false;
     }
 }
-
 document.getElementById("balance").innerHTML = "$" + balance;
 
-for (i = 0; i < deck.ranks.length; i++) {
-    for (j = 0; j < deck.suits.length; j++) {
-        sortedDeck.push(new Card(deck.ranks[i], deck.suits[j]));
+Initialize();
+function Initialize() {
+    for (i = 0; i < deck.ranks.length; i++) {
+        for (j = 0; j < deck.suits.length; j++) {
+            sortedDeck.push(new Card(deck.ranks[i], deck.suits[j]));
+        }
     }
+    //Start State
+    Shuffle(newDeck);
+    AssignValue(newDeck);
+    AssignSpriteColor(newDeck);
 }
-
-//Start State
-Shuffle(newDeck);
-AssignValue(newDeck);
-AssignSpriteColor(newDeck);
 
 function Shuffle(deck) {
     if (deck.length === 0) {
@@ -146,7 +147,6 @@ function AddHandValue(hand) {
     }
     return totalHandValue;
 }
-//Giving Parameters makes innerHTML not work for some reason...
 function CheckPlayerForAces() {
     //Checks for Double Aces
     if (playerHandTotal === 22 && playerHand.length === 2) {
@@ -204,6 +204,7 @@ function PlayerWins() {
     document.getElementById("betDiv").innerHTML =
         `<button id="betButton">BET</button>`;
     document.getElementById("toolTip").innerText = "Player Wins Round!"
+    Initialize();
 }
 //When Dealer Wins a Hand you lose your bet
 function DealerWins() {
@@ -214,6 +215,7 @@ function DealerWins() {
     document.getElementById("betDiv").innerHTML =
         `<button id="betButton">BET</button>`;
     document.getElementById("toolTip").innerText = "Dealer Wins Round!"
+    Initialize();
 }
 //Calculate DealerHand
 function CalculateDealerHand() {
