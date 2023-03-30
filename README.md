@@ -1,6 +1,7 @@
 # BlackJack Demo - NOT OPTIMIZED FOR MOBILE
  
-This is a very simple Demo BlackJack Version I have done on the side to familiarize myself with Vanilla Javascript.
+This is a very simple BlackJack Demo Version I have done on the side to familiarize myself with Vanilla Javascript, HTML, and CSS.  This was done during winter break prior to my General Assembly Project 1.
+Why so many semicolons and capitalized Methods/Functions? Semicolons were from my prior knowledge of C# and I was Capitalizing all my methods when I was self teaching myself in Unity Game Engine.
 
 &nbsp;
  ![alt game screenshot](https://speckoh.com/images/blackjack.jpg)
@@ -31,4 +32,3 @@ This is a very simple Demo BlackJack Version I have done on the side to familiar
 ## Notes:
  ---
  - I do plan to add Card Backgrounds and perhaps Chips in place of the current Balance
- - Why so many semicolons and capitalized Methods/Functions? Habit from C# and Unity...
