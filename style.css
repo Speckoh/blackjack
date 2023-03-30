@@ -1,0 +1,186 @@
+*{
+    border: 0px solid red;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(0, 0, 0);
+    margin: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-content: flex-start;
+    background-image: url("http://www.speckoh.com/images/casino_table_bg720.jpg");
+    width: 100vw;
+    max-width: 1280px;
+    min-width: 280px;
+    height: 720px;
+    background-size: 100% 720px;
+    background-repeat: no-repeat;
+}
+#dealer{
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    min-width: 280px;
+}
+#playerTextBox, #balanceTextBox{
+    margin: 14px 0;
+}
+#playerName, #balance, #dealerName{
+    background-color: rgba(30, 30, 30, .75);
+    margin: 5px auto;
+    padding: 2px 10px;
+    width: fit-content;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 8px;
+}
+#balance{
+    text-align: center;
+    width: 120px;
+}
+.playAreaContainer{
+    display: grid;
+    justify-content: center;
+    width: fit-content;
+    height: 155px;
+    grid-template-columns: 1fr 4fr;
+}
+.playerContainer, .dealerContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 30px);
+}
+#playerTotal, #dealerTotal{
+    margin: 22px 10px;
+    width: 32px;
+    height: fit-content;
+    color: whitesmoke;
+    background-color: rgb(30, 30, 30, .75);
+    border-radius: 6px;
+}
+.txtTotal{
+    text-align: center;
+    padding-top: 2px;
+}
+#deck, #facedown, #card{
+    margin: 10px 0;
+    border: 2px solid rgb(0, 0, 0);
+    height: 120px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(30, 30, 30, 0.85);
+}
+#card{
+    background-color: whitesmoke;
+}
+#deck, #facedown{
+    background-color: rgb(136, 136, 136);
+}
+section{
+    padding: 5px 10px 5px 0px;
+}
+#rank{
+    font-size: 24px;
+    text-align: center;
+    text-indent: 0px;
+    width: 28px;
+}
+section > img{
+    width: 12px;
+    margin-left: 8px;
+    float: left;
+}
+.cardSprite > img{
+    width: 50px;
+    margin-top: -6px;
+    margin-left: 12px;
+}
+#banner{
+    margin: auto;
+    background-image: url("http://www.speckoh.com/images/casino_table_banner.png");
+    background-size: contain;
+    height: 50px;
+    opacity: .5;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+    min-width: 280px;
+}
+#bannerText{
+    font-family: 'Volkhov', serif;
+    color: rgba(245, 245, 245, .85);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 14px;
+}
+.big{
+    font-size: 125%;
+}
+.playerButtons{
+    display: grid;
+    justify-items: center;
+}
+button{
+    font-size: 20px;
+    color:rgb(30, 30, 30);
+    font-weight: 600;
+    width: 80px;
+    margin: 5px auto;
+    border-radius: 4px;
+    border: none;
+}
+#toolTip{
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+#balance{
+    font-size: 24px;;
+}
+#betInput{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 0;
+}
+#betAmount{
+    margin: 5px auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: 4px solid rgba(245, 245, 245, .4);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+#betButton, #hitButton, #stayButton{
+    padding: 2px 0 0 0;
+    cursor: pointer;
+}
+#empty{
+    color: whitesmoke;
+    font-size: 24px;
+}
+#emptyButton{
+    padding: 9px 0 8px 0;
+}
+input::placeholder {
+    font-weight: 400;
+    opacity: 0.6;
+    color: gray;
+}

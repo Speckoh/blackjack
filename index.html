@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin><link 
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Permanent+Marker&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <div class="gridContainer">
+        <div id="dealer">
+            <div id="textBox">
+                <div id="dealerName">Dealer</div>
+            </div>
+            <div class="playAreaContainer">
+                <div id="dealerTotal"></div>
+                <div class="dealerContainer">
+                    <!-- Dealer Cards Go Here -->
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div id="bannerText"><span class="big">B</span>LACK
+                <span class="big">J</span>ACK</div>
+        </div>
+        <div id="player1">
+            <div class="playAreaContainer">
+                <div id="playerTotal"></div>
+                <div class="playerContainer">
+                    <!-- Player Cards Go Here -->
+                </div>
+            </div>
+            <div class="playerButtons">
+                <div id="betDiv"><button id="betButton">BET</button></div>
+                <div id="betAmount"><input id="betInput" placeholder="Enter Your Bet"></div>
+            </div>
+            <div id="playerTextBox">
+                <div id="playerName">Player</div>
+            </div>
+            <div id="balanceTextBox"><div id="balance">&nbsp;</div></div>
+            <div id="toolTip">&nbsp;</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
